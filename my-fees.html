@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Fees - Escuela de Sophia of Caloocan, Inc.</title>
+    <title>Student Dashboard - Escuela de Sophia of Caloocan, Inc.</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -25,7 +25,7 @@
                 <button type="button" class="button-link-dark circle" id="sidebar-toggler">
                     <span class="material-symbols-rounded">menu</span>
                 </button>
-                <a href="dashboard.html" class="d-flex align-items-center gap-2" id="school-logo">
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
                     <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
                     <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
                 </a>
@@ -74,7 +74,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -86,52 +86,75 @@
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="my-subject-grades.html">
+                    <a class="side-link" href="my-grades.html">
                         <span class="material-symbols-rounded">grade</span>
-                        <span class="side-text">My Subject & Grades</span>
+                        <span class="side-text">My Grades</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="calendar-of-activities.html">
-                        <span class="material-symbols-rounded">event_note</span>
-                        <span class="side-text">Calendar of Activities</span>
+                    <a class="side-link" href="my-schedule.html">
+                        <span class="material-symbols-rounded">schedule</span>
+                        <span class="side-text">My Schedule</span>
                     </a>
                 </li>
-                <li class="side-item-header">Message</li>
                 <li class="side-item">
-                    <a class="side-link" href="compose.html">
-                        <span class="material-symbols-rounded">create</span>
-                        <span class="side-text">Compose</span>
+                    <a class="side-link" href="my-transcript.html">
+                        <span class="material-symbols-rounded">receipt_long</span>
+                        <span class="side-text">My Transcript</span>
                     </a>
                 </li>
                 <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="compose.html">
+                        <span class="material-symbols-rounded">chat</span>
+                        <span class="side-text">Message</span>
+                    </a>
+                </li>
+                <li class="side-item">
                     <a class="side-link" href="inbox.html">
-                        <span class="material-symbols-rounded">all_inbox</span>
-                        <span class="side-text">Inbox</span>
+                        <span class="material-symbols-rounded">history_edu</span>
+                        <span class="side-text">Curriculum</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="">
-                        <span class="material-symbols-rounded">delete</span>
-                        <span class="side-text">Delete Box</span>
+                        <span class="material-symbols-rounded">rule</span>
+                        <span class="side-text">My Request</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">campaign</span>
+                        <span class="side-text">Faculty Announcements</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">list_alt</span>
+                        <span class="side-text">My Attendance</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">text_snippet</span>
+                        <span class="side-text">My Clearance</span>
                     </a>
                 </li>
                 <li class="side-item-header">Settings</li>
                 <li class="side-item">
                     <a class="side-link" href="profile.html">
-                        <span class="material-icons-outlined">person</span>
+                        <span class="material-symbols-rounded">person</span>
                         <span class="side-text">Profile</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-password.html">
-                        <span class="material-icons-outlined">password</span>
+                        <span class="material-symbols-rounded">password</span>
                         <span class="side-text">Change Password</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-school-year.html">
-                        <span class="material-icons-outlined">change_circle</span>
+                        <span class="material-symbols-rounded">change_circle</span>
                         <span class="side-text">Change School Year</span>
                     </a>
                 </li>
@@ -143,149 +166,13 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="dashboard.html" class="bread-link">Dashboard</a>
+                            <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <div class="bread-link" aria-current="page">My Fees</div>
+                            <a href="#" class="bread-link" aria-current="page">My Fees</a>
                         </li>
                     </ol>
-                    <h4>School Fees</h4>
-                </div>
-                <div class="row g-3 mt-4">
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="body">
-                                <div class="row g-3">
-                                    <div class="col-xl-12">
-                                        <div class="font-size-18 font-weight-600">School Year Fee</div>
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-striped mb-0 mt-3">
-                                                <thead>
-                                                    <tr>
-                                                        <th>School Year</th>
-                                                        <th>Grade Level</th>
-                                                        <th>Total Payable</th>
-                                                        <th>Total Balance</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>2022 - 2023</td>
-                                                        <td>Grade 9</td>
-                                                        <td>
-                                                            <div class="badge round background-color-success">
-                                                                31998.00 
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="badge round background-color-success">
-                                                                31998.00 
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="body">
-                                <div class="row g-3">
-                                    <div class="col-xl-12">
-                                        <div class="font-size-18 font-weight-600">Payment Plan</div>
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-hover table-striped mb-0 mt-3">
-                                                <tbody>
-                                                    <tr>
-                                                        <td><b>Payment Modes</b></td>
-                                                        <td><b>Amount</b></td>
-                                                        <td><b>Payment Applied</b></td>
-                                                        <td><b>Balance</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Down Payment</td>
-                                                        <td>5,900.00</td>
-                                                        <td>5,900.00</td>
-                                                        <td>0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>23,635.00</td>
-                                                        <td>13,098.00</td>
-                                                        <td>10,537.00</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="body">
-                                <div class="row g-3">
-                                    <div class="col-xl-12">
-                                        <div class="font-size-18 font-weight-600">Payments Made</div>
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-hover table-striped mb-0 mt-3">
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="text-center">Receipt Number</th>
-                                                        <th class="text-center">Amount Paid</th>
-                                                        <th class="text-center">Date of Payment</th>
-                                                        <th class="text-center">Mode of Payment</th>
-                                                        <th class="text-center">For Month</th>
-                                                        <th class="text-center">For Other</th>
-                                                        <th class="text-center">Remarks</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">85957</td>
-                                                        <td class="text-center">
-                                                            <span class="badge round background-color-success">2610.00 </span>
-                                                        </td>
-                                                        <td class="text-center">September 8, 2022</td>
-                                                        <td class="text-center">CASH</td>
-                                                        <td class="text-center">January Registration</td>
-                                                        <td class="text-center"></td>
-                                                        <td class="text-center">tf</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">85957A </td>
-                                                        <td class="text-center">
-                                                            <span class="badge round background-color-success">9980.00</span>
-                                                        </td>
-                                                        <td class="text-center">September 8, 2022</td>
-                                                        <td class="text-center">CASH</td>
-                                                        <td class="text-center">January Registration</td>
-                                                        <td class="text-center"></td>
-                                                        <td class="text-center">mffull</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">85957B</td>
-                                                        <td class="text-center">
-                                                            <span class="badge round background-color-success">6408.00</span>
-                                                        </td>
-                                                        <td class="text-center">September 8, 2022</td>
-                                                        <td class="text-center">CASH</td>
-                                                        <td class="text-center">January Registration</td>
-                                                        <td class="text-center"></td>
-                                                        <td class="text-center">books</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h4>My Fees for 2022-2023</h4>
                 </div>
             </div>
         </main>

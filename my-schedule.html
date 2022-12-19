@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compose - Escuela de Sophia of Caloocan, Inc.</title>
+    <title>Student Dashboard - Escuela de Sophia of Caloocan, Inc.</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -25,7 +25,7 @@
                 <button type="button" class="button-link-dark circle" id="sidebar-toggler">
                     <span class="material-symbols-rounded">menu</span>
                 </button>
-                <a href="dashboard.html" class="d-flex align-items-center gap-2" id="school-logo">
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
                     <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
                     <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
                 </a>
@@ -74,7 +74,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -86,52 +86,75 @@
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="my-subject-grades.html">
+                    <a class="side-link" href="my-grades.html">
                         <span class="material-symbols-rounded">grade</span>
-                        <span class="side-text">My Subject & Grades</span>
+                        <span class="side-text">My Grades</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="calendar-of-activities.html">
-                        <span class="material-symbols-rounded">event_note</span>
-                        <span class="side-text">Calendar of Activities</span>
+                    <a class="side-link active" href="my-schedule.html">
+                        <span class="material-symbols-rounded">schedule</span>
+                        <span class="side-text">My Schedule</span>
                     </a>
                 </li>
-                <li class="side-item-header">Message</li>
                 <li class="side-item">
-                    <a class="side-link active" href="compose.html">
-                        <span class="material-symbols-rounded">create</span>
-                        <span class="side-text">Compose</span>
+                    <a class="side-link" href="my-transcript.html">
+                        <span class="material-symbols-rounded">receipt_long</span>
+                        <span class="side-text">My Transcript</span>
                     </a>
                 </li>
                 <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="compose.html">
+                        <span class="material-symbols-rounded">chat</span>
+                        <span class="side-text">Message</span>
+                    </a>
+                </li>
+                <li class="side-item">
                     <a class="side-link" href="inbox.html">
-                        <span class="material-symbols-rounded">all_inbox</span>
-                        <span class="side-text">Inbox</span>
+                        <span class="material-symbols-rounded">history_edu</span>
+                        <span class="side-text">Curriculum</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="">
-                        <span class="material-symbols-rounded">delete</span>
-                        <span class="side-text">Delete Box</span>
+                        <span class="material-symbols-rounded">rule</span>
+                        <span class="side-text">My Request</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">campaign</span>
+                        <span class="side-text">Faculty Announcements</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">list_alt</span>
+                        <span class="side-text">My Attendance</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">text_snippet</span>
+                        <span class="side-text">My Clearance</span>
                     </a>
                 </li>
                 <li class="side-item-header">Settings</li>
                 <li class="side-item">
                     <a class="side-link" href="profile.html">
-                        <span class="material-icons-outlined">person</span>
+                        <span class="material-symbols-rounded">person</span>
                         <span class="side-text">Profile</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-password.html">
-                        <span class="material-icons-outlined">password</span>
+                        <span class="material-symbols-rounded">password</span>
                         <span class="side-text">Change Password</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-school-year.html">
-                        <span class="material-icons-outlined">change_circle</span>
+                        <span class="material-symbols-rounded">change_circle</span>
                         <span class="side-text">Change School Year</span>
                     </a>
                 </li>
@@ -143,68 +166,47 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="index.html" class="bread-link">Dashboard</a>
+                            <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <div class="bread-link" aria-current="page">Messages</div>
+                            <a href="#" class="bread-link" aria-current="page">My Schedule</a>
                         </li>
                     </ol>
-                    <h4>Compose</h4>
+                    <h4>My Schedule for 2022-2023</h4>
                 </div>
-                <div class="row g-4 mt-4">
-                    <div class="col-xl-3 col-lg-4 col-md-4">
-                        <div class="card">
-                            <div class="body">
-                                <div class="row row-cols-1 g-3">
-                                    <div class="col">
-                                        <a href="" class="button-primary block md">
-                                            <span class="material-symbols-rounded">create</span>
-                                            Compose
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        
-                                        <div class="list-group">
-                                            <a href="inbox.html" class="list-group-item d-flex align-items-center gap-3 py-3 px-3 border-0">
-                                                <span class="material-symbols-rounded">all_inbox</span>
-                                                <div class="font-weight-500">Inbox</div>
-                                            </a>
-                                            <a href="" class="list-group-item d-flex align-items-center gap-3 py-3 px-3 border-0">
-                                                <span class="material-symbols-rounded">delete</span>
-                                                <div class="font-weight-500">Delete</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-8 col-md-8">
-                        <div class="font-size-18 font-weight-600 mb-3">Compose Message</div>
-                        <div class="card">
-                            <div class="body">
-                                <form action="">
-                                    <div class="row row-cols-1 g-3">
-                                        <div class="col">
-                                            <label for="title" class="form-label">Advisers</label>
-                                            <select class="form-control form-select" required>
-                                                <option selected disabled>-- Select --</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <label for="title" class="form-label">Title</label>
-                                            <input type="text" class="form-control" required>
-                                        </div>
-                                        <div class="col">
-                                            <label for="title" class="form-label">Message</label>
-                                            <textarea class="form-control content-editor" placeholder="Write some messages..." cols="30" rows="3" required></textarea>
-                                        </div>
-                                        <div class="col">
-                                            <button type="submit" class="button-primary">Send Message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                <div class="row g-3 mt-4">
+                    <div class="col-xl-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>SC ID</th>
+                                        <th>Course Code</th>
+                                        <th>Course Description</th>
+                                        <th class="text-center">Units</th>
+                                        <th class="text-center">Lab</th>
+                                        <th class="text-center">Lec</th>
+                                        <th>Schedule</th>
+                                        <th>Instructor</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>16355</td>
+                                        <td>NCM 100</td>
+                                        <td>THEORETICAL FOUNDATION OF NURSING</td>
+                                        <td class="text-center">3.00</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">3</td>
+                                        <td>LEC M 5:00 pm - 7:30 PM Anatomy Room / LEC W 5:00 pm - 5:30 pm</td>
+                                        <td>LEC Orias, DJ</td>
+                                        <td>
+                                            <button type="button" class="button-accent-medium block">Seating Arrangement</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -218,7 +220,5 @@
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/editor.js"></script>
-    <script src="https://cdn.tiny.cloud/1/zzubw4vq5fyaxdgpcaxa4zcfx43wyxc62zr3ii3a73exoddc/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </body>
 </html>

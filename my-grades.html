@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar of Activities - Escuela de Sophia of Caloocan, Inc.</title>
+    <title>Student Dashboard - Escuela de Sophia of Caloocan, Inc.</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -17,8 +17,6 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <!-- Calendar -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.2/main.min.css" integrity="sha256-5veQuRbWaECuYxwap/IOE/DAwNxgm4ikX7nrgsqYp88=" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
@@ -27,7 +25,7 @@
                 <button type="button" class="button-link-dark circle" id="sidebar-toggler">
                     <span class="material-symbols-rounded">menu</span>
                 </button>
-                <a href="dashboard.html" class="d-flex align-items-center gap-2" id="school-logo"> 
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
                     <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
                     <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
                 </a>
@@ -76,7 +74,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -88,52 +86,75 @@
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="my-subject-grades.html">
+                    <a class="side-link active" href="my-grades.html">
                         <span class="material-symbols-rounded">grade</span>
-                        <span class="side-text">My Subject & Grades</span>
+                        <span class="side-text">My Grades</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link active" href="calendar-of-activities.html">
-                        <span class="material-symbols-rounded">event_note</span>
-                        <span class="side-text">Calendar of Activities</span>
+                    <a class="side-link" href="my-schedule.html">
+                        <span class="material-symbols-rounded">schedule</span>
+                        <span class="side-text">My Schedule</span>
                     </a>
                 </li>
-                <li class="side-item-header">Message</li>
                 <li class="side-item">
-                    <a class="side-link" href="compose.html">
-                        <span class="material-symbols-rounded">create</span>
-                        <span class="side-text">Compose</span>
+                    <a class="side-link" href="my-transcript.html">
+                        <span class="material-symbols-rounded">receipt_long</span>
+                        <span class="side-text">My Transcript</span>
                     </a>
                 </li>
                 <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="compose.html">
+                        <span class="material-symbols-rounded">chat</span>
+                        <span class="side-text">Message</span>
+                    </a>
+                </li>
+                <li class="side-item">
                     <a class="side-link" href="inbox.html">
-                        <span class="material-symbols-rounded">all_inbox</span>
-                        <span class="side-text">Inbox</span>
+                        <span class="material-symbols-rounded">history_edu</span>
+                        <span class="side-text">Curriculum</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="">
-                        <span class="material-symbols-rounded">delete</span>
-                        <span class="side-text">Delete Box</span>
+                        <span class="material-symbols-rounded">rule</span>
+                        <span class="side-text">My Request</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">campaign</span>
+                        <span class="side-text">Faculty Announcements</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">list_alt</span>
+                        <span class="side-text">My Attendance</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="">
+                        <span class="material-symbols-rounded">text_snippet</span>
+                        <span class="side-text">My Clearance</span>
                     </a>
                 </li>
                 <li class="side-item-header">Settings</li>
                 <li class="side-item">
                     <a class="side-link" href="profile.html">
-                        <span class="material-icons-outlined">person</span>
+                        <span class="material-symbols-rounded">person</span>
                         <span class="side-text">Profile</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-password.html">
-                        <span class="material-icons-outlined">password</span>
+                        <span class="material-symbols-rounded">password</span>
                         <span class="side-text">Change Password</span>
                     </a>
                 </li>
                 <li class="side-item">
                     <a class="side-link" href="change-school-year.html">
-                        <span class="material-icons-outlined">change_circle</span>
+                        <span class="material-symbols-rounded">change_circle</span>
                         <span class="side-text">Change School Year</span>
                     </a>
                 </li>
@@ -145,21 +166,41 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="dashboard.html" class="bread-link">Dashboard</a>
+                            <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <div class="bread-link" aria-current="page">Calendar of Activities</div>
+                            <a href="#" class="bread-link" aria-current="page">My Grades</a>
                         </li>
                     </ol>
-                    <h4>My Calendar of Activities</h4>
+                    <h4>My Grades for 2022-2023</h4>
                 </div>
-
-                <div class="row g-5">
+                <div class="row g-3 mt-4">
                     <div class="col-xl-12">
-                        <div class="card">
-                            <div class="body">
-                                <div id="calendar"></div>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>Subject Code</th>
+                                        <th>Subject Name</th>
+                                        <th class="text-center">Units</th>
+                                        <th class="text-center">Midterm</th>
+                                        <th class="text-center">Finals</th>
+                                        <th class="text-center">Final Grade</th>
+                                        <th class="text-center">Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NCM 100</td>
+                                        <td>THEORETICAL FOUNDATION OF NURSING</td>
+                                        <td class="text-center">3.00</td>
+                                        <td class="text-center">81</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -173,19 +214,5 @@
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.2/main.min.js" integrity="sha256-sR+oJaZ3c0FHR6+kKaX1zeXReUGbzuNI8QTKpGHE0sg=" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                headerToolbar: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                },
-            });
-            calendar.render();
-        });
-    </script>
 </body>
 </html>

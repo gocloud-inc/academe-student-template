@@ -74,7 +74,7 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link active" href="index.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
@@ -98,7 +98,7 @@
                     </a>
                 </li>
                 <li class="side-item">
-                    <a class="side-link" href="my-transcript.html">
+                    <a class="side-link active" href="my-transcript.html">
                         <span class="material-symbols-rounded">receipt_long</span>
                         <span class="side-text">My Transcript</span>
                     </a>
@@ -169,98 +169,37 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Boarding</a>
+                            <a href="#" class="bread-link" aria-current="page">My Transcript</a>
                         </li>
                     </ol>
-                    <h4>Hi, Jhoaquin James S. Abad!</h4>
+                    <h4>My Transcript for 2022-2023</h4>
                 </div>
                 <div class="row g-3 mt-4">
                     <div class="col-xl-12">
-                        <div class="background-accent-success round py-4 px-4 d-flex align-items-start gap-3">
-                            <div class="initial-circle-md circle background-color-success">
-                                <span class="material-symbols-rounded">check</span>
-                            </div>
-                            <div class="me-auto">
-                                <div class="font-size-20 font-weight-600">Enrollment Status</div>
-                                <div class="font-size-14">You are now officially enrolled this school year : 2022 - 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="body">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="initial-circle-md rounded-4 background-accent-primary">
-                                        <span class="material-symbols-rounded text-color-primary">perm_identity</span>
-                                    </div>
-                                    <div class="details">
-                                        <div class="font-size-18 font-weight-600">00000127</div>
-                                        <div class="font-size-13">Student ID</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="body">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="initial-circle-md rounded-4 background-accent-danger">
-                                        <span class="material-symbols-rounded text-color-danger">article</span>
-                                    </div>
-                                    <div class="details">
-                                        <div class="font-size-18 font-weight-600">Grade 9</div>
-                                        <div class="font-size-13">Grade Level</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="card">
-                            <div class="body">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="initial-circle-md rounded-4 background-accent-success">
-                                        <span class="material-symbols-rounded text-color-success">chair_alt</span>
-                                    </div>
-                                    <div class="details">
-                                        <div class="font-size-18 font-weight-600">OPTIMISTIC (Block A)</div>
-                                        <div class="font-size-13">Section</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <th>Description</th>
+                                        <th class="text-center">Units</th>
+                                        <th class="text-center">Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NCM 100</td>
+                                        <td>THEORETICAL FOUNDATION OF NURSING</td>
+                                        <td class="text-center">3.00</td>
+                                        <td class="text-center">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-    </div>
-
-    <!-- Password Modal -->
-    <div class="modal fade" id="passwordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="passwordModalLabel">Confirm Password</h5>
-                </div>
-                <form action="">
-                    <div class="modal-body">
-                        <div class="row g-4">
-                            <div class="col-xl-12">
-                                <div class="form-group">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control form-input-lg" placeholder="Enter your password">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button-link-dark round md" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="button-primary round md">Proceed</button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
 
     <button type="button" class="button-secondary circle md shadow-sm position-fixed bottom-0 right-0 my-5 mx-5 theme-btn-switcher">
